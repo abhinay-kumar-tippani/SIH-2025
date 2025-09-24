@@ -1,0 +1,105 @@
+@import "mapbox-gl/dist/mapbox-gl.css";
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 228 10% 10%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 228 10% 10%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 228 10% 10%;
+
+      /* Primary: Blue */
+      --primary: 217 91% 60%;
+      --primary-foreground: 0 0% 100%;
+
+      /* Secondary: Green */
+      --secondary: 142 71% 45%;
+      --secondary-foreground: 0 0% 100%;
+
+      --muted: 0 0% 96%;
+      --muted-foreground: 0 0% 45%;
+
+      /* Accent: Black */
+      --accent: 0 0% 0%;
+      --accent-foreground: 0 0% 100%;
+
+      --destructive: 5 69% 54%;
+      --destructive-foreground: 0 0% 100%;
+
+      --border: 0 0% 90%;
+      --input: 0 0% 90%;
+      --ring: 217 91% 60%;
+
+      --radius: 0.75rem;
+    }
+
+    .dark {
+      --background: 228 12% 10%;
+      --foreground: 0 0% 100%;
+
+      --card: 228 10% 12%;
+      --card-foreground: 0 0% 100%;
+
+      --popover: 228 10% 12%;
+      --popover-foreground: 0 0% 100%;
+
+      --primary: 217 91% 60%;
+      --primary-foreground: 0 0% 100%;
+
+      --secondary: 142 71% 45%;
+      --secondary-foreground: 0 0% 100%;
+
+      --muted: 228 10% 18%;
+      --muted-foreground: 0 0% 80%;
+
+      --accent: 0 0% 0%;
+      --accent-foreground: 0 0% 100%;
+
+      --destructive: 5 69% 54%;
+      --destructive-foreground: 0 0% 100%;
+
+      --border: 228 10% 18%;
+      --input: 228 10% 18%;
+      --ring: 217 91% 60%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+
+/* --- Animations (utilities) --- */
+@layer utilities {
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.94); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(8px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(59,130,246,0.5); }
+    50% { box-shadow: 0 0 0 12px rgba(59,130,246,0); }
+  }
+
+  .animate-fade-in-up { animation: fadeInUp 560ms ease-out both; }
+  .animate-scale-in { animation: scaleIn 600ms cubic-bezier(0.22,0.61,0.36,1) both; }
+  .animate-slide-in { animation: slideIn 500ms ease-out both; }
+  .animate-pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
+}
