@@ -2,8 +2,18 @@
   "expo": {
     "extra": {
       "eas": {
-        "projectId": "f526701f-cbbb-4790-9c56-da6f186e19ef"
+        "projectId": "a0d2b028-e4a8-4d41-a29e-bd73196f9c14"
       }
-    }
+    },
+    "android": {
+      "package": "com.abhinaytippani.civicseva"
+    },
+    "ios": {
+      "bundleIdentifier": "com.abhinaytippani.civicseva"
+    },
+    "name": "CivicSeva",
+    "slug": "your-app-slug",
+    "version": "1.0.0",
+    "sdkVersion": "the-sdk-version-you-use"
   }
 }
