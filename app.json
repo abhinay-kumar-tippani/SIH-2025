@@ -12,8 +12,8 @@
       "bundleIdentifier": "com.abhinaytippani.civicseva"
     },
     "name": "CivicSeva",
-    "slug": "your-app-slug",
+    "slug": "civicseva",
     "version": "1.0.0",
-    "sdkVersion": "the-sdk-version-you-use"
+    "sdkVersion": "54.0.0"
   }
 }
