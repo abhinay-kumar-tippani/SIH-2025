@@ -45,6 +45,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
+    "eas": "^0.1.0",
     "embla-carousel-react": "^8.1.5",
     "framer-motion": "^11.18.0",
     "leaflet": "^1.9.4",
