@@ -9,7 +9,10 @@
       "package": "com.abhinaytippani.civicseva"
     },
     "ios": {
-      "bundleIdentifier": "com.abhinaytippani.civicseva"
+      "bundleIdentifier": "com.abhinaytippani.civicseva",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "name": "CivicSeva",
     "slug": "starter",
