@@ -6,7 +6,7 @@
       }
     },
     "android": {
-      "package": "com.abhinaytippani.civicseva"
+      "package": "com.abhinaytippani.civiccseva"
     },
     "ios": {
       "bundleIdentifier": "com.abhinaytippani.civicseva",
